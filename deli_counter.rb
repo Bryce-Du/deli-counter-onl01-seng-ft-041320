@@ -11,3 +11,5 @@ def line(deli_line)
   end
   puts message
 end
+def take_a_number
+  

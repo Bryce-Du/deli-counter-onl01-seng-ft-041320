@@ -16,8 +16,8 @@ def take_a_number (deli_line, customer)
   puts "Welcome, #{customer}. You are number #{deli_line.length} in line."
 end
 def now_serving (deli_line)
-  next_cust = deli_line.unshift()
-  if next_cust != nil
+  if deli_line.length 
+    next_cust = deli_line.unshift()
     puts "Now serving #{next_cust}!"
   else
     "There is nobody waiting to be served!"

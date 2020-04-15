@@ -11,5 +11,6 @@ def line(deli_line)
   end
   puts message
 end
-def take_a_number
-  
+def take_a_number (deli_line, customer)
+  deli_line << customer
+end  

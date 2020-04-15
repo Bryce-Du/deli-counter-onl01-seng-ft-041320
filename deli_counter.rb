@@ -14,4 +14,12 @@ end
 def take_a_number (deli_line, customer)
   deli_line << customer
   puts "Welcome, #{customer}. You are number #{deli_line.length} in line."
-end  
+end
+def now_serving (deli_line)
+  next_cust = deli_line.unshift()
+  if next_cust
+    puts "Now serving #{next_cust}!"
+  else
+    "There is nobody waiting to be served!"
+  end
+end

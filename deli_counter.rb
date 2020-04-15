@@ -4,12 +4,9 @@ def line(deli_line)
   if deli_line.length == 0
     message << " empty."
   else
-    message << ": "
+    message << ":"
     deli_line.each_with_index do |customer, index|
-      message << "#{index + 1}. #{customer}"
-      if index < deli_line.length
-        message << " "
-      end
+      message << " #{index + 1}. #{customer}"
     end
   end
   puts message
